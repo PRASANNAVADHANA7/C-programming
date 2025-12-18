@@ -1,8 +1,11 @@
 #include<stdio.h>
 int main(){
-    int x;
+    int x,one,two;
     scanf("%d",&x);
-    x=((x-50)==0);
+    one=x%10;
+    x=x/10;
+    two=x%10;
+    x=(one!=two);
     printf("%d",x);
     return 0;
 }
